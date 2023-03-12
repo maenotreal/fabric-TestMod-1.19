@@ -1,6 +1,8 @@
 package net.maenr.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.maenr.tutorialmod.blocks.ModBlocks;
+import net.maenr.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +12,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
